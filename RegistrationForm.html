@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration</title>
+
+<style>
+    body{
+        background-color: rgb(174, 174, 231);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .form-container{
+        width: 350px;
+        background: white;
+        margin: 40px auto;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px gray;
+        text-align: center;
+    }
+
+    h1{
+        color: rgb(57, 57, 223);
+        text-transform: capitalize;
+        text-decoration: underline;
+        
+    }
+
+    label{
+        color: rgb(95, 111, 125);
+        float: left;
+        margin-top: 10px;
+    }
+
+    input{
+        width: 100%;
+        padding: 7px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    .gender{
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    button{
+        margin-top: 15px;
+        padding: 8px 20px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .submit{
+        color: white;
+        background-color: blue;
+    }
+
+    .reset{
+        color: white;
+        background-color: crimson;
+    }
+
+    img{
+        width: 120px;
+        margin-top: 15px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h1>Student Registration</h1>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <div class="gender">
+            <label>Gender</label><br>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Others
+        </div>
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <label>Upload Resume</label>
+        <input type="file">
+
+        <button type="submit" class="submit">Submit</button>
+        <button type="reset" class="reset">Reset</button>
+    </form>
+</div>
+
+</body>
+</html>

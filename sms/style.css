@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(190, 190, 221);
+}
+h1{
+    color: rgb(54, 9, 217);
+    background-color: rgb(112, 112, 178);
+    align-items: center;
+}
+
+nav{
+
+}
+a{
+    color: azure;
+    background-color: chocolate;
+    padding-left: 0cqmax;
+}
