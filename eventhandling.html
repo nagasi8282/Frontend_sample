@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <style>
+        body{
+            background-color: #6e6ec8;
+        }
+        button{
+            color: aquamarine;
+            background-color: beige;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Handling Functions</h1>
+    <button id="start" onclick="click()">Get Started</button>
+    <p id="text"></p>
+</body>
+<script>
+    let start=document.getElementById("start");
+    let text=document.getElementById("text");
+    //function started(){
+    //    text.innerText='Button clicked';
+     ///   text.style.color='Yellow';
+     //   text.style.fontSize="20px";
+    //}
+
+    start.addEventListener("click",()=>{
+        text.innerText='Button clicked Event Handling123';
+        text.style.color='cornflowerblue';
+        text.style.fontSize='20px';
+    })
+
+</script>
+</html>

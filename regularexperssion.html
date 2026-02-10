@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Experssions</title>
+    <style>
+       
+body {
+    font-family: Arial, sans-serif;
+    background: #c4daef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+section {
+    background: #edd5d5;
+    padding: 25px 30px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+form div {
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+
+input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+
+p {
+    font-size: 12px;
+    color: red;
+    margin-top: 4px;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #357abd;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Sign In From</h2>
+        <form id="form">
+           <div>
+                <label>UserName:</label>
+                <input type="text" id="username" placeholder="Enter Name">
+                <p id="nameText"></p>
+           </div>
+           <div>
+                <label for="">Eamil:</label>
+                <input type="email"  id="email" placeholder="Enter Email">
+                <p id="emailText"></p>
+           </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="Enter Password">
+                <p id="passwordText"></p>
+            </div>
+            <button>Submit</button>
+        </form>
+    </section>
+    <script src="regularExperssions.js"></script>
+</body>
+</html>

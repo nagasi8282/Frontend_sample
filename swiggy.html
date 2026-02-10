@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Swiggy Clone</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+    background:#ff5200;
+    color:white;
+}
+.img1{
+    width: 100px;
+    height: 50px;
+}
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+.logo{
+    font-size:26px;
+    font-weight:bold;
+}
+.nav-right button{
+    padding:10px 18px;
+    border-radius:20px;
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+}
+.app-btn{
+    background:#ff784b;
+    color:white;
+}
+.sign-btn{
+    background:black;
+    color:white;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    margin-top:40px;
+}
+.hero h1{
+    font-size:40px;
+}
+.search-box{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+.search-box input{
+    width:280px;
+    padding:14px;
+    border-radius:10px;
+    border:none;
+}
+
+/* CARDS */
+.cards{
+    margin-top:80px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding-bottom:80px;
+}
+.card{
+    background:white;
+    color:black;
+    width:350px;
+    height:300px;
+    border-radius:30px;
+    padding:30px;
+    position:relative;
+}
+.card h2{
+    font-size:32px;
+}
+.card span{
+    color:#888;
+}
+.offer{
+    background:#ffe3d6;
+    color:#ff5200;
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:20px;
+    margin-top:15px;
+    font-weight:600;
+}
+.card img{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    width:120px;
+}
+.arrow{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#ff5200;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    position:absolute;
+    bottom:20px;
+    left:20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <img class="img1" src="C:\Users\chall\Downloads\Logo (1).png" alt="logo">
+    </div>
+    <div class="nav-right">
+        <button class="app-btn">Get the App</button>
+        <button class="sign-btn">Sign in</button>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Order food & groceries. Discover <br> best restaurants. Swiggy it!</h1>
+    <div class="search-box">
+        <input type="text" placeholder="Enter your delivery location">
+        <input type="text" placeholder="Search for restaurant, item or more">
+    </div>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h2>FOOD DELIVERY</h2>
+        <span>FROM RESTAURANTS</span><br>
+        <div class="offer">UPTO 60% OFF</div>
+        <div class="arrow">→</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+    </div>
+
+    <div class="card">
+        <h2>INSTAMART</h2>
+        <span>INSTANT GROCERY</span><br>
+        <div class="offer">UPTO 60% OFF</div>
+        <div class="arrow">→</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/706/706164.png">
+    </div>
+
+    <div class="card">
+        <h2>DINEOUT</h2>
+        <span>EAT OUT & SAVE MORE</span><br>
+        <div class="offer">UPTO 50% OFF</div>
+        <div class="arrow">→</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,25 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Frontend Website</title>
+<style>
+    body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(to right,#4facfe,#00f2fe);
+}
+
+/* Header */
+header{
+background:#111;
+color:white;
+padding:20px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* Hero Section */
+.hero{
+height:60vh;
+text-align:center;
+padding-top:100px;
+color:white;
+}
+
+/* Cards */
+.cards{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+width:200px;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 0 10px gray;
+}
+
+/* Table */
+table{
+width:60%;
+margin:auto;
+border-collapse:collapse;
+background:white;
+}
+
+th,td{
+border:1px solid black;
+padding:10px;
+text-align:center;
+}
+
+/* Form */
+form{
+width:300px;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+input,select{
+width:100%;
+padding:8px;
+margin:8px 0;
+}
+
+/* Footer */
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:40px;
+}
+
+</style>
 </head>
 
 <body>
-    <h1>Welcome to our Student protal</h1>
 
-    <center>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="regiter.html">Registartion</a>
-            <a href="login.html">Login</a>
-            <a href="about.html">About</a>
-        </nav>
-        <h1>Thank you for visiting</h1>
-    </center>
+<header>
+  <h1>My Frontend Website</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#price">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2>Learn Web Development</h2>
+  <p>Build your career in Frontend & Full Stack Development</p>
+  <button>Join Now</button>
+</section>
+
+<section id="courses" class="cards">
+  <div class="card">
+    <h3>HTML</h3>
+    <p>Build website structure</p>
+  </div>
+  <div class="card">
+    <h3>CSS</h3>
+    <p>Style your pages</p>
+  </div>
+  <div class="card">
+    <h3>JavaScript</h3>
+    <p>Make websites dynamic</p>
+  </div>
+</section>
+
+<section id="price">
+<table>
+<tr>
+<th>Course</th>
+<th>Duration</th>
+<th>Fee</th>
+</tr>
+<tr>
+<td>HTML</td>
+<td>15 Days</td>
+<td>₹1000</td>
+</tr>
+<tr>
+<td>CSS</td>
+<td>20 Days</td>
+<td><del>₹2000</del> ₹1500</td>
+</tr>
+<tr>
+<td>Full Stack</td>
+<td>3 Months</td>
+<td>₹5000</td>
+</tr>
+</table>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form>
+<label>Name</label>
+<input type="text" required>
+
+<label>Email</label>
+<input type="email" required>
+
+<label>Course</label>
+<select>
+<option>HTML</option>
+<option>CSS</option>
+<option>Full Stack</option>
+</select>
+
+<label>Gender</label>
+<input type="radio" name="g"> Male
+<input type="radio" name="g"> Female
+
+<button>Submit</button>
+</form>
+</section>
+
+<footer>
+<p>© 2025 MyFrontendWebsite</p>
+</footer>
+
 </body>
-
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <style>
+        body{
+            background-color: rgb(131, 131, 200);
+            
+        }
+        h1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;  
+        }
+       .container{
+        border: 4px solid rgb(58, 58, 131);
+        border-radius: 20px;
+        display: inline-block;
+        margin-top: 10%;
+        padding: 20px;
+       }
+       input, textarea, button{
+        padding: 10px;
+        margin: 10px;
+        background-color:rgb(171, 171, 232) ;
+        
+       }
+       select{
+        font-size: 15px;
+        font-weight: 400;
+        border: 2px solid rgb(121, 121, 191);
+       }
+       label{
+        color: rgb(58, 58, 131);
+        font-size:20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h1>Sign-up Form</h1>
+        <form class="form">
+        <label>Enter your name:</label>
+        <input type="text" name="text" placeholder="Enter your name"><br>
+        <label>Enter your email:</label>
+        <input type="email" name="email" placeholder="Enter your email"><br>
+        <label>Enter your password:</label>
+        <input type="password" name="password" placeholder="Enter your password"><br>
+        <select>
+            <option>----select----</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+            <option>Australia</option>
+        </select><br>
+        <label>Enter your message:</label><br>
+        <textarea rows="6" cols="20" placeholder="Message box"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+        </div>
+    </center>
+</body>
+</html>

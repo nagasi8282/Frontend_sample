@@ -1,0 +1,219 @@
+JAVASCRIPT Notes:
+==========================================================================================
+dt:23rd jan 2026
+
+>JavaScript is a high level ,interpreted ,light-weight programming language ,mainly used to develop interactive and dynamic web pages.
+Along with Html(Structuring) and CSS(Styling) it is core technology of the world wide web.
+>It is used to respond user actions like (clicks,keypress,form validations) validation forms, manipulate html and css dynamically and 
+communicate with server(API). Develop full stack Applications with node.js internationally
+
+Advantages of JAVASCRIPT:
+
+>Use both frontend and backend.
+>Easy to learn for beginners.
+>Users perform actions.
+>Huge Ecosystem(Angular,node,vue,next.js)
+>Run in all modern browsers.
+>high demand in jobs and interviews.
+
+History of JAVASCRIPT:
+
+In the year of 1995, Brendan Eich developed by First javaScript, in NetScape company,within 10 days.
+JavaScript first name is Mocha, then live script
+Now it is JavaScript-Market name.
+
+Important Milestones:
+1997: JavaScript Standardised as ECMASCRIPT (ES) by ECMA international.
+2005 ES5: standard way and widely supproted.
+2015 ES6: majorly used (let,const,arrow function,etc..)
+2023 ES7 & ES8: async,await,etc..
+
+Ways of Js:
+
+1.Inline 
+2.Internal
+3.External
+
+===============================================================================================================
+dt:24th jan 2026
+
+Variables:
+
+JavaScript is used to store the data in variables
+There are three types of ways to store data in variables keys.
+1.let : 
+	Re-assign the values.
+	Don't re-declare the variables.
+2.const : 
+	Don't re-declare and Re-assign the values because const is nothing but constant values.
+3.Var:
+	Re-declare and Re-assign the values and variables.
+	
+Comparison operators:
+
+Loose equals == check only values.
+Strict equals === check both values and data types.
+<,>,>=,<=,etc.
+
+Assignment operators:
+
++=,-=,/=,**,%=.
+
+==================================================================================================================
+dt:26th jan 2026
+
+Data Types:
+2 types
+	1.Primitive data types - String - whatever the characters should write in the double quotes,
+							 number - digits and float like decimal values,
+							 boolean - may be true or false values,
+							 BigInt - more then 20 digits,
+							 symbol
+							 
+	
+	
+Type Conversion and type Coercion:
+
+>To change the mathematical numbers data type manually is called type conversion.
+>To change the mathematical numbers data type javaScript automatically is called type Coercion.
+
+>To check the type of data use typeof() - keyword.
+>String number values change to number data type values use Number("10") keyword.
+>Number values change to string data type values using the String(10) keyword.
+>String true and false values changes into boolean use Boolean("true") keyword.
+
+2.Non-Primitive data types - object,arrays.
+
+To store multiple values using the non-primitive data types.
+Arrays: defined in squares brackets.
+
+Objects : defined on flower brackets
+
+Objects it is name and value and key values attributes and value pairs.
+
+==================================================================================================================
+dt:27th jan 2026
+
+==================================================================================================================
+dt:28th jan 2026
+
+Loop: until the condition is satisfied the loop will be iterated.
+
+>For - initialization,condition,iteration(increment/decrement).
+>While - first initialize,then condition after increment/decrement.
+>Do While- first initialize and increment/decrement and then condition in while.
+>For Each - to iterate on every value.
+>For of
+>For in
+
+Nested Loop:
+A loop in multiple loops is called nested loops.
+
+Loop Control Statements:
+To control the loops-
+break - it will stops the loop at that particular condition and also the loops.
+continue - it will stops the loop at that particular condition ONLY.
+and return.
+
+==================================================================================================================
+dt:29th jan 2026
+
+Functions:
+Reusable blocks of code.
+We use it by calling the function.
+Don't need to write multiple times to run the program ,use functions by calling it and the program will execute how many times we want.
+
+There are 3 types of functions:
+Function Declaration - create the and directly declare the functions.
+Function Expression - total function is assign to a variable.
+Anonymous Function - total function is assigned to a variable and there is no function name to it.
+
+And arrow functions - arrow functions are ES6 modules.
+Less line of code.
+
+Parameters - to store the values the function name , with that parameters variables reuse the values in the functional block of code.
+
+Arguments - to the above mentioned parameters in functions ,assign the values while function calling those processes is called as Arguments.
+
+Default parameters : to the parameters directly assigning the values that the assigning process is called as default parameters.
+
+Priorities : 
+if mentioned  the arguments the first priority to the arguments ,but if didn't mentioned the arguments then the priority is default 
+parameters.
+
+==================================================================================================================
+dt:30th jan 2026
+
+Scopes of Variables :
+3 types:
+	1.Global Scope : declare variables outside of the scope can be used inside and outside of the Scopes/function.
+						let,var,const can work globally (will work).
+	2.Local Scope :  declare variables inside of the scope can be used variable inside of the Scopes/functions only.
+						let,var,const have local scope (doesn't work). 
+	3.Black Scopoe : declare variable inside of the scopes like if,else,while can be used inside of the scopes/if,else block only.
+						let and const have black scope (doesn't work), 
+						var doesn't have black scope and can work inside and outside of the scope(will work).
+						
+Closures:
+
+Closures is when a function remembers variables from the outer function even after the outer function execution.
+
+IIFE : 
+
+Immediately Invoked Function Expression - runs/executes/calls the function immediately by function itself.
+
+Hoisting :
+
+Hoisting is in two phases ,memory phase and execution phase.
+
+In memory phase all variable values and function declaration stores in the memory.
+
+In Execution phase  with the storing values will run/execute the program.
+
+In javaScript ,variables and functions declarations are at the top of their scope before execution, this process is called Hoisting.
+
+var - variables work hoist.
+let,const their is not hoisting, before declaring the variable/function, if calling the function or printing variables they are into "tdz" zone (temporal dead zone) 
+so,get the errors. 
+
+Funtion declaration - work hoist.
+Function Expression and anonymous functions - doesn't hoist.
+
+==================================================================================================================
+dt:31th jan 2026
+
+Create new Array:
+With new Array() keyword
+
+Array Methods:
+
+push - value added at the end
+pop - value deleted at the end
+unshift - value added at the start
+shift - value deleted at the start
+append - combine one to another values
+slice - [startIndex,endIndex]
+
+splice - remove the elements(startIndex,number of elements)
+splice will  add the elements also
+
+for of loop: every value get into the loop
+
+for in loop: ondex of every value and values also.
+
+for each loop: Every item get into the loop.
+iterate on variables directly
+================================================================================
+================================================================================
+03-02-2026
+
+
+DOM :
+DOM stands for document object model. It is the programming interface language. It represents the html or xml 
+structure for creating websites dynamically.
+
+Creating a browsers object based representation for HTML structure to enable javascript modify, get, delete and
+create elements dynamically.
+
+DOM Tree :
+Like a family tree. the browsers html document structure

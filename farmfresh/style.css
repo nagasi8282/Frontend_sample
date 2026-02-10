@@ -1,0 +1,281 @@
+:root{
+  --green:#2e8f2e;
+  --dark-green:#256f25;
+  --border:#ddd;
+  --text:#333;
+  --bg:#f8f8f8;
+  --card:#fff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:var(--bg);color:var(--text);}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 25px;
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo img{height:80px;width:auto;object-fit:contain;}
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--text);
+  font-weight:500;
+  padding:5px 10px;
+}
+nav a:hover{color:var(--green);}
+
+/* SEARCH */
+.search-box input{
+  padding:7px 14px;
+  border-radius:20px;
+  border:1px solid var(--border);
+  width:220px;
+}
+.search-box input:focus{
+  outline:none;
+  border-color:var(--green);
+}
+
+/* CART */
+.cart-btn{
+  background:var(--green);
+  color:#fff;
+  border:none;
+  padding:9px 18px;
+  border-radius:25px;
+  cursor:pointer;
+}
+.cart-btn i{
+  margin-right:6px;
+}
+.cart-btn:hover{
+  background:var(--dark-green);
+}
+.app-btn{
+  background:#ff6f00;
+  color:#fff !important;
+  padding:7px 16px;
+  border-radius:20px;
+  font-size:14px;
+}
+.app-btn:hover{
+  background:#e65c00;
+}
+
+
+/* HERO */
+.hero{
+  min-height:80vh;
+  background:
+  linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+  url("https://www.lalpathlabs.com/blog/wp-content/uploads/2019/01/Fruits-and-Vegetables.jpg")
+  center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+  color:#fff;
+}
+.hero h1{font-size:48px;margin-bottom:12px;}
+.hero p{font-size:20px;margin-bottom:20px;}
+.hero button{
+  background:var(--green);
+  color:#fff;
+  border:none;
+  padding:14px 30px;
+  border-radius:30px;
+  cursor:pointer;
+}
+.hero button:hover{background:var(--dark-green);}
+
+/* CATEGORIES */
+.categories{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+  padding:40px 20px;
+}
+.category-card{
+  background:var(--card);
+  border-radius:12px;
+  text-align:center;
+  padding:20px;
+  cursor:pointer;
+  transition:.3s;
+}
+.category-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 6px 12px rgba(0,0,0,.1);
+}
+.category-card img{width:100px;height:100px;}
+.category-card h4{color:var(--green);}
+
+/* PRODUCTS */
+.products-section{padding:50px 20px;}
+.products-section h2{text-align:center;color:var(--green);margin-bottom:30px;}
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+}
+.product{
+  background:var(--card);
+  border-radius:12px;
+  padding:15px;
+  text-align:center;
+  transition:.3s;
+}
+.product:hover{
+  transform:translateY(-6px);
+  box-shadow:0 8px 15px rgba(0,0,0,.1);
+}
+.product img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:8px;
+}
+.product p{color:var(--green);font-weight:bold;}
+.product button{
+  margin-top:8px;
+  background:var(--green);
+  color:#fff;
+  border:none;
+  padding:8px 14px;
+  border-radius:12px;
+}
+.product button:hover{background:var(--dark-green);
+}
+
+.login-section{
+  padding:80px 20px;
+  background:#f6f7f8;
+  display:flex;
+  justify-content:center;
+}
+
+.login-card{
+  background:#fff;
+  width:100%;
+  max-width:420px;
+  padding:40px 35px;
+  border-radius:16px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.08);
+  text-align:center;
+}
+
+.login-card h2{
+  font-size:26px;
+  margin-bottom:10px;
+}
+
+.login-sub{
+  font-size:15px;
+  color:#666;
+  margin-bottom:30px;
+}
+
+.login-form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.login-form input{
+  padding:14px 16px;
+  font-size:15px;
+  border-radius:12px;
+  border:1px solid #ddd;
+  outline:none;
+}
+
+.login-form input:focus{
+  border-color:var(--green);
+}
+
+.otp-btn{
+  padding:14px;
+  background:#fff;
+  color:var(--green);
+  border:2px solid var(--green);
+  border-radius:25px;
+  font-size:15px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+}
+
+.otp-btn:hover{
+  background:var(--green);
+  color:#fff;
+}
+
+.verify-btn{
+  padding:15px;
+  background:var(--green);
+  color:#fff;
+  border:none;
+  border-radius:25px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.verify-btn:hover{
+  background:var(--dark-green);
+}
+
+.login-text{
+  font-size:13px;
+  color:#777;
+  margin-top:10px;
+}
+
+.login-text a{
+  color:var(--green);
+  text-decoration:none;
+}
+
+.login-text a:hover{
+  text-decoration:underline;
+}
+
+/* MOBILE FRIENDLY */
+@media(max-width:480px){
+  .login-card{
+    padding:30px 22px;
+  }
+}
+
+/* FOOTER */
+footer{
+  background:#222;
+  color:#ccc;
+  padding:30px 25px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px;
+  text-align:center;
+}
+footer a{color:#ccc;text-decoration:none;}
+footer a:hover{color:var(--green);}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1{font-size:36px;}
+  nav{flex-wrap:wrap;justify-content:center;}
+}
