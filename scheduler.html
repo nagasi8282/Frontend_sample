@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        body{
+            background-color: rgb(201, 228, 219);
+        }
+        h2{
+            text-align: center;
+            color: rgb(75, 25, 212);
+        }
+        p{
+            color:black;
+            font-size:xx-large;
+            text-align: center;
+        }
+        div{
+            display: flex;
+            justify-content:space-around;
+            background-color: rgb(194, 194, 232);
+        }
+    </style>
+</head>
+<body>
+    <h2>Counter APP</h2>
+    <p id="value">0</p>
+    <div>
+    <button id="inc">Increase</button>
+    <button id="dec">Decrease</button>
+    <button id="res">Reset</button>
+    </div>
+
+    <script>
+        let increase = document.getElementById("inc");
+        let decrease = document.getElementById("dec");
+        let reset = document.getElementById("res");
+        let value = document.getElementById("value");
+
+        increase.onclick = () => {
+            setInterval(() => {
+                value.innerText = Number(value.innerText) + 1;
+                value.style.color = "green";
+            }, 10);
+        };
+
+        decrease.onclick = () => {
+            setInterval(() => {
+                value.innerText = Number(value.innerText) - 1;
+                value.style.color = "red";
+            }, 10);
+        };
+
+        reset.onclick = () => {
+            value.innerText = 0;
+            value = 0;
+        };
+    </script>
+</body>
+</html>
